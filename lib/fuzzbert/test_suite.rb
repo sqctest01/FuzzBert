@@ -21,5 +21,5 @@ class FuzzBert::TestSuite
     obj.instance_eval(&blk) if blk
     obj
   end
- 
+
 end
