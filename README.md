@@ -6,7 +6,7 @@ Random Testing (or "fuzzing") is not really new, it has been around for quite
 some time. Yet it still hasn't found widespread adoption in everyday coding
 practices, much too often it is only used for the purpose of finding exploits
 for existing applications or libraries. FuzzBert wants to improve this situation.
-It's a simple fuzzing framework with an RSpec-like DSL that will allow you to 
+It's a simple fuzzing framework with an RSpec-like DSL that will allow you to
 integrate random tests in your project with minimal effort.
 
 For further information on random testing, here are two excellent starting points:
@@ -24,7 +24,7 @@ For further information on random testing, here are two excellent starting point
 FuzzBert defines an RSpec-like DSL that can be used to define different fuzzing
 scenarios. The DSL uses three words: `fuzz`, `deploy` and `data`. `fuzz` can be
 thought of as defining a new scenario, such as "fuzz this command line tool",
-"fuzz this particular URL of my web app" or "fuzz this library method taking 
+"fuzz this particular URL of my web app" or "fuzz this library method taking
 external input".
 
 Within a `fuzz` block, there must be one occurence of `deploy` and one or several
@@ -82,7 +82,7 @@ The `deploy` block takes the generated data as a parameter. The block itself is
 responsible of deploying the payload. An execution is considered successful if
 the `deploy` block passes with no uncaught error being raised. If an error slips
 through or if the Ruby process crashes altogether, the execution is of course
-considered as a failure. 
+considered as a failure.
 
 `data` blocks must return a lambda or proc that takes no argument. You can either
 choose completely custom lambdas of your own or use those predefined for you in
@@ -160,7 +160,7 @@ this is that we typically want to detect hard crashes when a C extension or even
 itself encounters an input it can't handle. Besides being able to cope with these cases,
 running in separate processes proves beneficial otherwise as well: by default, FuzzBert
 runs the tests in four separate processes at once, therefore utilizing your CPU's cores
-effectively. You can tweak that setting with `--pool-size` to set this number to 1 
+effectively. You can tweak that setting with `--pool-size` to set this number to 1
 (for completely sequential runs) or to the exact number of cores your CPU offers.
 
 ## What happens if we encounter a bug?
@@ -196,9 +196,9 @@ on its way.
 
 You may also use FuzzBert for fuzzing arbitrary applications or libraries that aren't
 connected to Ruby at all - have a look in the examples that ship with FuzzBert.
- 
+
 ## License
 
-Copyright (c) 2012 Martin Boßlet. Distributed under the MIT License. See LICENSE for 
+Copyright (c) 2012 Martin Boßlet. Distributed under the MIT License. See LICENSE for
 further details.
 
