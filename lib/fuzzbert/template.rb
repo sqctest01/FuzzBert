@@ -21,14 +21,14 @@ class FuzzBert::Template
   private
 
   class Parser
-    
+
     def initialize(template)
       @io = StringIO.new(template)
       @template = []
     end
 
     def parse
-      @state = determine_state 
+      @state = determine_state
       while token = parse_token
         @template << token
       end

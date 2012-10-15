@@ -1,7 +1,7 @@
-Mon Oct 15 14:52:45 EDT 2012
+Mon Oct 15 15:34:29 EDT 2012
 
-      36      36    1972 /tmp/14608_FILES_OF
-       5       5     286 /tmp/14608_FILELIST
+      36      36    1972 /tmp/15915_FILES_OF
+       4       4     224 /tmp/15915_FILELIST
 inside
 inside for
-*** /tmp/github.com/sqctest01/FuzzBert/lib/fuzzbert/generators.rb *** 70
+*** /tmp/github.com/sqctest01/FuzzBert/lib/fuzzbert/template.rb *** 154
