@@ -3,7 +3,7 @@ require 'base64'
 module FuzzBert::Generators
 
   class << self
-    
+
     def random(limit=1024)
       -> { random_bytes(limit) { |data| data } }
     end
@@ -37,7 +37,7 @@ module FuzzBert::Generators
         ret
       end
     end
-    
+
     def fixed(data)
       -> { data }
     end
