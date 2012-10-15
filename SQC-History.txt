@@ -1,14 +1,7 @@
-     204    1194    7643 README.md
-DOC: wc into file
-     204    1194    7643 README.md
-DOC: wc into file
-     204    1194    7643 README.md
-DOC: wc into file
-      21      47     382 Rakefile
-DOC: wc into file
-      21      47     382 Rakefile
-DOC: wc into file
-      21      47     382 Rakefile
-DOC: wc into file
-      21      47     382 Rakefile
-DOC: wc into file
+Mon Oct 15 14:52:45 EDT 2012
+
+      36      36    1972 /tmp/14608_FILES_OF
+       5       5     286 /tmp/14608_FILELIST
+inside
+inside for
+*** /tmp/github.com/sqctest01/FuzzBert/lib/fuzzbert/generators.rb *** 70
