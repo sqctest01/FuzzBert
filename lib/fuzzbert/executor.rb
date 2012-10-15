@@ -6,7 +6,7 @@ class FuzzBert::Executor
   DEFAULT_LIMIT = -1
   DEFAULT_HANDLER = FuzzBert::Handler::FileOutput
 
-  def initialize(suites, args = { 
+  def initialize(suites, args = {
     pool_size: DEFAULT_POOL_SIZE,
     limit: DEFAULT_LIMIT,
     handler: DEFAULT_HANDLER.new
@@ -45,7 +45,7 @@ class FuzzBert::Executor
   end
 
   def trap_child_exit
-    trap(:CHLD) do 
+    trap(:CHLD) do
       begin
         while exitval = Process.wait2(-1, Process::WNOHANG)
           pid = exitval[0]
@@ -56,7 +56,7 @@ class FuzzBert::Executor
           end
           @n += 1
           if @limit == -1 || @n < @limit
-            run_instance(*@producer.next) 
+            run_instance(*@producer.next)
           else
             @running = false
           end
@@ -118,7 +118,7 @@ class FuzzBert::Executor
       end
       [@suite.description, @suite.test, gen]
     end
-      
+
     class Ring
       def initialize(objs)
         @i = 0
