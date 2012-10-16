@@ -65,7 +65,7 @@ describe FuzzBert::Executor do
     context "doesn't complain when test succeeds" do
       let (:suite) do
         FuzzBert::TestSuite.create("suite") do
-          deploy { |data| data } 
+          deploy { |data| data }
           data("1") { -> { "a" } }
         end
       end
