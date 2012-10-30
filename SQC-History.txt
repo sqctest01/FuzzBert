@@ -5,3 +5,5 @@ Mon Oct 15 15:34:29 EDT 2012
 inside
 inside for
 *** /tmp/github.com/sqctest01/FuzzBert/lib/fuzzbert/template.rb *** 154
+Tue Oct 30 14:02:44 EDT 2012
+
