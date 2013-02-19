@@ -1,4 +1,3 @@
-require 'rspec'
 require 'fuzzbert'
 
 describe FuzzBert::AutoRun do
