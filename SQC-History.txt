@@ -1,7 +1,2 @@
-Mon Oct 15 15:34:29 EDT 2012
+Fri Mar  1 20:41:52 EST 2013
 
-      36      36    1972 /tmp/15915_FILES_OF
-       4       4     224 /tmp/15915_FILELIST
-inside
-inside for
-*** /tmp/github.com/sqctest01/FuzzBert/lib/fuzzbert/template.rb *** 154
